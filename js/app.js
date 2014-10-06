@@ -11,7 +11,18 @@ angular.module('app', ['ui.router', 'google'])
 		.state('home.index', {
 			url: '/index',
 			templateUrl: 'templates/index.tpl.html'
-		})
+		});
+})
+
+.controller('MyMapCtrl', function ($scope){
+	$scope.$on('map:dragend', function (event, map) {
+		var center = map.getCenter();
+
+		$scope.map.center.lat = center.lat();
+		$scope.map.center.lng = center.lng();
+
+		console.log('You moved the map!');
+	});
 });
 
 angular.element(document).ready(function () {

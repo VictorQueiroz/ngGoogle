@@ -1,3 +1,15 @@
 <google-maps
 	data-on-click="onClick($map)">
 </google-maps>
+
+<div class="form-group">
+	<textarea ng-bind="map | json" cols="30" rows="10" class="form-control" readonly></textarea>
+</div>
+
+<div class="form-group">
+	<input type="text" class="form-control" ng-model="map.center.lat" readonly>
+</div>
+
+<div class="form-group">
+	<input type="text" class="form-control" ng-model="map.center.lng" readonly>
+</div>
