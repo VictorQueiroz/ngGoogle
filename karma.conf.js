@@ -15,6 +15,12 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'http://maps.googleapis.com/maps/api/js',
+      'bower_components/angular/angular.min.js',
+      'bower_components/jquery/dist/jquery.min.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'dist/angular-google.tpl.min.js',
+      'src/**/*.js',
     ],
 
 
@@ -54,7 +60,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode

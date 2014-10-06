@@ -15,5 +15,10 @@
     "test",
     "tests"
   ],
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "angular": "~1.2.26",
+    "angular-mocks": "~1.2.26",
+    "jquery": "~2.1.1"
+  }
 }
