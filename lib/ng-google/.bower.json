@@ -29,6 +29,6 @@
     "commit": "cac474178f22c31d07105691151b27058864d58f"
   },
   "_source": "git://github.com/VictorQueiroz/ngGoogle.git",
-  "_target": "~1.0.1",
+  "_target": "~1.0.2",
   "_originalSource": "ng-google"
 }
