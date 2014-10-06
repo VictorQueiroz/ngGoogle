@@ -36,6 +36,5 @@
   },
   "_source": "git://github.com/jozefizso/bower-bootstrap-css.git",
   "_target": "~3.2.0",
-  "_originalSource": "bootstrap-css",
-  "_direct": true
+  "_originalSource": "bootstrap-css"
 }
