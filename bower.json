@@ -1,0 +1,19 @@
+{
+  "name": "ngGoogle",
+  "version": "1.0.0",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "Victor Queiroz <victorcqueirozg@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": false
+}
