@@ -1,7 +1,7 @@
 angular
 	.module('google.maps.controllers.Marker', [])
 
-	.controller('MarkerCtrl', function ($scope, $element, $attrs, google, Marker, LatLng) {
+	.controller('MarkerCtrl', function ($scope, $element, $attrs, $parse, google, Marker, LatLng) {
 		var self = this,
 		options = {},
 		marker;

@@ -1,7 +1,7 @@
 angular
 	.module('google.maps.controllers.Map', [])
 
-	.controller('MapCtrl', function ($scope, $element, $attrs, $transclude, $q, $timeout, $document, Map, LatLng, googleMapsConfig, Map) {
+	.controller('MapCtrl', function ($scope, $element, $attrs, $transclude, $q, $timeout, $parse, Map, LatLng, googleMapsConfig, Map) {
 		var self = this,
 		ms = 800,
 		options = {},
@@ -19,6 +19,17 @@ angular
 			options = angular.extend(googleMapsConfig, options);
 			options.center = new LatLng(options.center[0], options.center[1]);
 			var map = this.map = new Map($element.children('#map')[0], options);
+
+			google.maps.event.addListener(map, 'dragend', function () {
+				if($attrs.onDragend) {
+					var fn = $parse($attrs.onZoomChanged);
+
+					fn($scope, {
+						$map: this
+					});
+				}
+				$scope.$emit('map:dragend', map);
+			});
 
 			google.maps.event.addListener(map, 'zoom_changed', function () {
 				if($attrs.onZoomChanged) {
