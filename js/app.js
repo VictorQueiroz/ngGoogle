@@ -1,6 +1,8 @@
 angular.module('app', ['ui.router', 'google'])
 
-.config(function ($stateProvider) {
+.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+	$urlRouterProvider.otherwise('/home/index');
+	$locationProvider.hashPrefix('!@');
 	$stateProvider
 		.state('home', {
 			url: '/home',
@@ -8,7 +10,7 @@ angular.module('app', ['ui.router', 'google'])
 		})
 		.state('home.index', {
 			url: '/index',
-			templateUrl: 'index.tpl.html'
+			templateUrl: 'templates/index.tpl.html'
 		})
 });
 
