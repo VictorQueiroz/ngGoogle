@@ -1,0 +1,27 @@
+{
+  "name": "ngGoogle",
+  "version": "1.0.1",
+  "homepage": "https://github.com/VictorQueiroz/ngGoogle",
+  "authors": [
+    "Victor Queiroz (Vi) <victorcqueirozg@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "angular-strap": "~2.1.1",
+    "bootstrap-css": "~3.2.0",
+    "ui-router": "~0.2.11",
+    "ng-google": "~1.0.1"
+  }
+}

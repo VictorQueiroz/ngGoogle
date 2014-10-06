@@ -1,0 +1,35 @@
+{
+  "name": "ngGoogle",
+  "version": "1.0.1",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "Victor Queiroz <victorcqueirozg@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": false,
+  "devDependencies": {
+    "angular": "~1.2.26",
+    "angular-mocks": "~1.2.26",
+    "jquery": "~2.1.1"
+  },
+  "homepage": "https://github.com/VictorQueiroz/ngGoogle",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.1",
+    "commit": "d9ff303b47b85d9afca81ff6c4ee7072c7e05ab8"
+  },
+  "_source": "git://github.com/VictorQueiroz/ngGoogle.git",
+  "_target": "~1.0.1",
+  "_originalSource": "ng-google",
+  "_direct": true
+}
