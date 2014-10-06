@@ -10,7 +10,7 @@ angular
 				var mapCtrl = controllers[0];
 				var markerCtrl = controllers[1];
 
-				markerCtrl.initialize(mapCtrl);
+				markerCtrl.start(mapCtrl);
 			}
 		};
 	});
